@@ -4,3 +4,7 @@
 @import "layout/header";
 @import "layout/main";
 @import "layout/footer";
+
+* {
+  font-family: $font-main;
+}
