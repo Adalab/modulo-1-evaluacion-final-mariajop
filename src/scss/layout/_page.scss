@@ -1,9 +1,11 @@
 html {
-  font-size: 16px;
+  font-size: $font-size;
   font-family: $font-main;
+  list-style-type: none;
 }
 
 header,
+.main,
 footer {
-  box-sizing: border-box 1px red solid;
+  border: 1px red solid;
 }

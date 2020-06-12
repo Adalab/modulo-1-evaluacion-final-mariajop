@@ -1,9 +1,24 @@
-.header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+header {
+  height: 100vh;
+  background: url(../images/cover.jpg) 100vh;
+  background-size: cover;
+  background-position: center;
+
+  & .hero {
+    color: $color-white;
+    position: relative;
+    margin-top: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
-.hero {
-  background-image: url(./assets/images/cover.jpg);
+.hero-title {
+  font-family: $font-bold;
+  text-transform: uppercase;
+  font-size: 2.625rem;
+  text-align: center;
+  line-height: 55px;
 }
