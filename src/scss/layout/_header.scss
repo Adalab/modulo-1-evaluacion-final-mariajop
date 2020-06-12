@@ -24,9 +24,12 @@ header {
 }
 
 .buttondown {
-  display: block;
-  background-image: url(../images/ico-scroll-down.svg);
-  background-size: 100%;
   width: 20px;
-  height: 20px;
+  height: 11.7px;
+  width: 45px;
+  height: 45px;
+  background-size: 45px;
+  background-color: $color-white;
+  display: block;
+  border-radius: 45px;
 }

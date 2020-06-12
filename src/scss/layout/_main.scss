@@ -12,11 +12,25 @@
   height: 376px;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .intro-note {
   color: $color-mid-blue;
   text-transform: capitalize;
+}
+
+.button-go {
+  font-size: 1.25rem;
+  color: $color-bright-orange;
+  border: 2px solid red;
+  /*if red is removed, orange border color is lost. Why? I have no idea*/
+  border-color: $color-bright-orange;
+  padding: 10px;
+  border-radius: 22.5px;
+  text-align: center;
+  width: 76px;
+  height: 45px;
 }
 
 /*SECOND SECTION*/
@@ -30,7 +44,7 @@
   justify-content: space-between;
 }
 
-.list {
+.grid-3 {
   display: grid;
   grid-template-rows: repeat(3, 1fr);
 }

@@ -9,3 +9,15 @@ header,
 footer {
   border: 1px red solid;
 }
+
+.wrapper {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// @include tablet {
+//   introducir cambios
+//   antes cargar mixins
+//   dsplay grid, meter diferente display, etc.
+// }
