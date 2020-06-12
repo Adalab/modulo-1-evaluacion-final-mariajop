@@ -3,7 +3,8 @@
   margin: 0;
   padding: 0;
   color: inherit;
-  list-style-type: none; }
+  list-style-type: none;
+  text-decoration: none; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -341,6 +342,13 @@ header {
   text-align: center;
   line-height: 55px; }
 
+.buttondown {
+  display: block;
+  background-image: url(../images/ico-scroll-down.svg);
+  background-size: 100%;
+  width: 20px;
+  height: 20px; }
+
 .main h2 {
   font-family: Roboto Slab, serif;
   text-transform: capitalize; }
@@ -362,16 +370,30 @@ header {
 .main-why {
   height: 624px;
   background-color: #eff9ff;
-  display: grid;
-  grid-template-rows: repeat(5, 1fr); }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
 
 .list {
-  grid-row-start: 2;
-  grid-row-end: 5; }
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); }
 
 .footer {
   height: 465px;
   color: #ffffff;
-  background-color: #304268; }
+  background-color: #304268;
+  display: flex;
+  text-align: center;
+  line-height: 1.88;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly; }
+
+.flist-1 {
+  text-decoration: none; }
+
+.heart {
+  color: #f26002; }
 
 /*# sourceMappingURL=main.css.map */
