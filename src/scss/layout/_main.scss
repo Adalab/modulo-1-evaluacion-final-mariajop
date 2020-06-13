@@ -1,6 +1,12 @@
+.main {
+  line-height: 30px;
+  font-size: 1.125rem;
+}
+
 .main h2 {
   font-family: $font-bold;
   text-transform: capitalize;
+  font-size: 1.5rem;
 }
 
 .main h3 {
@@ -12,25 +18,30 @@
   height: 376px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.main-what p {
+  padding-top: 15px;
 }
 
 .intro-note {
   color: $color-mid-blue;
   text-transform: capitalize;
+  padding-top: 30px;
 }
 
 .button-go {
-  font-size: 1.25rem;
   color: $color-bright-orange;
+  background-color: $color-white;
   border: 2px solid red;
-  /*if red is removed, orange border color is lost. Why? I have no idea*/
+  // /*if red is removed, orange border color is lost. Why? I have no idea*/
   border-color: $color-bright-orange;
-  padding: 10px;
+  padding: 6px;
   border-radius: 22.5px;
   text-align: center;
   width: 76px;
   height: 45px;
+  margin: 45px 0 45px 0;
 }
 
 /*SECOND SECTION*/
@@ -44,7 +55,27 @@
   justify-content: space-between;
 }
 
+.main-why-title {
+  padding: 30px 0 0 0;
+}
+
 .grid-3 {
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 93px 93px 93px;
+  grid-template-columns: 180px;
+  grid-gap: 45px;
+  align-items: center;
+  text-align: center;
+}
+
+.button-more {
+  font-size: 1.125rem;
+  color: $color-white;
+  background-color: $color-bright-orange;
+  border-radius: 22.5px;
+  padding: 7px;
+  text-align: center;
+  width: 184px;
+  height: 45px;
+  margin-bottom: 60px;
 }

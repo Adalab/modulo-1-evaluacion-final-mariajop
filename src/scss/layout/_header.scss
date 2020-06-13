@@ -3,16 +3,24 @@ header {
   background: url(../images/cover.jpg) 100vh;
   background-size: cover;
   background-position: center;
+}
 
-  & .hero {
-    color: $color-white;
-    position: relative;
-    margin-top: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-  }
+.hamburger-button {
+  width: 14px;
+  height: 14px;
+  background-size: 45px;
+  background-color: $color-cerulean-blue;
+  display: block;
+}
+
+.hero {
+  color: $color-white;
+  position: relative;
+  margin-top: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 .hero-title {
@@ -21,6 +29,7 @@ header {
   font-size: 2.625rem;
   text-align: center;
   line-height: 55px;
+  margin-top: 0;
 }
 
 .buttondown {
@@ -32,4 +41,5 @@ header {
   background-color: $color-white;
   display: block;
   border-radius: 45px;
+  margin: 45px 137px 53px 138px;
 }

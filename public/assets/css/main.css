@@ -331,21 +331,30 @@ header {
   background: url(../images/cover.jpg) 100vh;
   background-size: cover;
   background-position: center; }
-  header .hero {
-    color: #ffffff;
-    position: relative;
-    margin-top: 50vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around; }
+
+.hamburger-button {
+  width: 14px;
+  height: 14px;
+  background-size: 45px;
+  background-color: #0271bc;
+  display: block; }
+
+.hero {
+  color: #ffffff;
+  position: relative;
+  margin-top: 50vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly; }
 
 .hero-title {
   font-family: Roboto Slab, serif;
   text-transform: uppercase;
   font-size: 2.625rem;
   text-align: center;
-  line-height: 55px; }
+  line-height: 55px;
+  margin-top: 0; }
 
 .buttondown {
   width: 20px;
@@ -355,11 +364,17 @@ header {
   background-size: 45px;
   background-color: #ffffff;
   display: block;
-  border-radius: 45px; }
+  border-radius: 45px;
+  margin: 45px 137px 53px 138px; }
+
+.main {
+  line-height: 30px;
+  font-size: 1.125rem; }
 
 .main h2 {
   font-family: Roboto Slab, serif;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  font-size: 1.5rem; }
 
 .main h3 {
   font-family: Roboto Slab, serif; }
@@ -368,24 +383,27 @@ header {
 .main-what {
   height: 376px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around; }
+  flex-direction: column; }
+
+.main-what p {
+  padding-top: 15px; }
 
 .intro-note {
   color: #8ccbea;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  padding-top: 30px; }
 
 .button-go {
-  font-size: 1.25rem;
   color: #f26002;
+  background-color: #ffffff;
   border: 2px solid red;
-  /*if red is removed, orange border color is lost. Why? I have no idea*/
   border-color: #f26002;
-  padding: 10px;
+  padding: 6px;
   border-radius: 22.5px;
   text-align: center;
   width: 76px;
-  height: 45px; }
+  height: 45px;
+  margin: 45px 0 45px 0; }
 
 /*SECOND SECTION*/
 .main-why {
@@ -396,17 +414,35 @@ header {
   align-items: center;
   justify-content: space-between; }
 
+.main-why-title {
+  padding: 30px 0 0 0; }
+
 .grid-3 {
   display: grid;
-  grid-template-rows: repeat(3, 1fr); }
+  grid-template-rows: 93px 93px 93px;
+  grid-template-columns: 180px;
+  grid-gap: 45px;
+  align-items: center;
+  text-align: center; }
+
+.button-more {
+  font-size: 1.125rem;
+  color: #ffffff;
+  background-color: #f26002;
+  border-radius: 22.5px;
+  padding: 7px;
+  text-align: center;
+  width: 184px;
+  height: 45px;
+  margin-bottom: 60px; }
 
 .footer {
   height: 465px;
   color: #ffffff;
   background-color: #304268;
-  display: flex;
   text-align: center;
   line-height: 1.88;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly; }
