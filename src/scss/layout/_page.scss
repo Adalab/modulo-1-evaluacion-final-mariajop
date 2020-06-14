@@ -14,6 +14,15 @@ footer {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
+  @include tablet {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  @include pc {
+    padding-left: 275px;
+    padding-right: 275px;
+  }
 }
 
 // @include tablet {

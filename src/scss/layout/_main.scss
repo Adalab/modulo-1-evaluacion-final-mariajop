@@ -1,33 +1,72 @@
 .main {
   line-height: 30px;
   font-size: 1.125rem;
+  @include tablet {
+    font-size: 1.25rem;
+  }
+  @include pc {
+  }
 }
 
 .main h2 {
   font-family: $font-bold;
   text-transform: capitalize;
   font-size: 1.5rem;
+
+  @include tablet {
+    font-size: 1.625rem;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  @include pc {
+    font-size: 2rem;
+  }
 }
 
 .main h3 {
   font-family: $font-bold;
+
+  @include tablet {
+    font-size: 1.5rem;
+  }
+
+  @include pc {
+    padding-bottom: 14px;
+  }
 }
 
 /*FIRST SECTION*/
+
 .main-what {
   height: 376px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  @include tablet {
+    height: 330px;
+  }
 }
 
 .main-what p {
   padding-top: 15px;
+
+  @include tablet {
+    padding-top: 15;
+    padding-bottom: 30px;
+  }
 }
 
 .intro-note {
+  font-size: 0.875rem;
   color: $color-mid-blue;
   text-transform: capitalize;
   padding-top: 30px;
+
+  @include tablet {
+    padding-top: 30px;
+    padding-bottom: 8px;
+  }
 }
 
 .button-go {
@@ -42,6 +81,21 @@
   width: 76px;
   height: 45px;
   margin: 45px 0 45px 0;
+
+  @include tablet {
+    width: 91px;
+    margin: 30px 0 70px 0;
+  }
+
+  @include pc {
+    width: 160px;
+  }
+
+  &:hover {
+    text-shadow: 0px 0px 10px $color-bright-orange;
+    box-shadow: 0px 5px 10px $color-bright-orange;
+    transition: all 0.3s ease 0.3s;
+  }
 }
 
 /*SECOND SECTION*/
@@ -53,6 +107,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  @include tablet {
+    height: 397px;
+  }
+  @include pc {
+    height: 427px;
+  }
+}
+.main-why p {
+  @include pc {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
 }
 
 .main-why-title {
@@ -66,6 +133,17 @@
   grid-gap: 45px;
   align-items: center;
   text-align: center;
+  @include tablet {
+    grid-template-rows: 112px;
+    grid-template-columns: 210px 210px 210px;
+  }
+
+  @include pc {
+    grid-template-rows: 122px;
+    grid-template-columns: 353.8px 353.8px 353.8px;
+    grid-column-gap: 26.2px;
+    align-items: flex-start;
+  }
 }
 
 .button-more {
@@ -78,4 +156,18 @@
   width: 184px;
   height: 45px;
   margin-bottom: 60px;
+
+  @include tablet {
+    width: 210px;
+  }
+
+  @include pc {
+    width: 255px;
+  }
+}
+
+.button-more:hover {
+  text-shadow: 0px 0px 10px $color-white;
+  box-shadow: 0px 5px 10px $color-bright-orange;
+  transition: all 0.3s ease 0.2s;
 }

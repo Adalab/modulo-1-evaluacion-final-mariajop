@@ -8,12 +8,39 @@
   align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-}
+  @include tablet {
+    height: 240px;
+    justify-items: left;
+    flex-direction: row-reverse;
+    text-align: left;
+    align-items: flex-start;
+    padding-top: 45px;
+    // .flist-1 .nth:nth-child() {
+    //   order: 1;
+    // }
+  }
 
-.flist-1 {
-  text-decoration: none;
-}
+  .button-up {
+    display: block;
+    position: absolute;
+    transform: translateY(-58px) translateX(-157.5px);
+    width: 45px;
+    height: 45px;
+    background-size: 45px;
+    background-color: $color-white;
+    border-radius: 45px;
+    margin: 0px 137px 53px 138px;
+  }
 
-.heart {
-  color: $color-bright-orange;
+  // .button-up:hover {
+  //   opacity: ;
+  // }
+
+  .flist-1 {
+    text-decoration: none;
+  }
+
+  .heart {
+    color: $color-bright-orange;
+  }
 }
