@@ -67,6 +67,19 @@ header {
   display: block;
   border-radius: 45px;
   margin: 30px 0 45px 0;
+  animation: fade-in-out ease 7s;
+  animation-iteration-count: infinite;
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
   @include pc {
     margin: 30px 0 13px 0;

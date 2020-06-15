@@ -6,17 +6,46 @@
   color: $color-bright-orange;
 }
 
+.footer {
+  background-color: $color-dark-grey-blue;
+  .button-up {
+    width: 45px;
+    height: 45px;
+    padding: 12px 12.4px 10px 12px;
+    background-size: 45px;
+    background-color: $color-white;
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    border-radius: 45px;
+    animation: fade-in-out ease 5s;
+    animation-iteration-count: infinite;
+    @keyframes fade-in-out {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  }
+}
+
 .footer-flex {
   height: 465px;
   color: $color-white;
-  background-color: $color-dark-grey-blue;
   text-align: center;
   line-height: 1.88;
   position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
+
   @include tablet {
     height: 240px;
     justify-items: left;
@@ -33,17 +62,5 @@
     .flist-1 {
       order: 2;
     }
-  }
-
-  .button-up {
-    display: block;
-    position: absolute;
-    transform: translateY(-50%) translateX(-50%);
-    width: 45px;
-    height: 45px;
-    padding: 15.3px 12px 15.3px 12px;
-    background-size: 45px;
-    background-color: $color-white;
-    border-radius: 45px;
   }
 }

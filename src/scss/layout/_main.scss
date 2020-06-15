@@ -4,8 +4,6 @@
   @include tablet {
     font-size: 1.25rem;
   }
-  @include pc {
-  }
 }
 
 .main h2 {
@@ -29,9 +27,6 @@
 
   @include tablet {
     font-size: 1.5rem;
-  }
-
-  @include pc {
     padding-bottom: 14px;
   }
 }
@@ -46,14 +41,14 @@
   @include tablet {
     height: 330px;
   }
-}
 
-.main-what p {
-  padding-top: 15px;
+  .main-what p {
+    padding-top: 15px;
 
-  @include tablet {
-    padding-top: 15;
-    padding-bottom: 30px;
+    @include tablet {
+      padding-top: 15;
+      padding-bottom: 30px;
+    }
   }
 }
 
@@ -72,9 +67,7 @@
 .button-go {
   color: $color-bright-orange;
   background-color: $color-white;
-  border: 2px solid red;
-  // /*if red is removed, orange border color doesn't show. Why? I have no idea*/
-  border-color: $color-bright-orange;
+  border: 2px solid $color-bright-orange;
   padding: 6px;
   border-radius: 22.5px;
   text-align: center;
@@ -82,19 +75,19 @@
   height: 45px;
   margin: 45px 0 45px 0;
 
-  @include tablet {
-    width: 91px;
-    margin: 30px 0 70px 0;
-  }
-
-  @include pc {
-    width: 160px;
-  }
-
   &:hover {
     text-shadow: 0px 0px 10px $color-bright-orange;
     box-shadow: 0px 5px 10px $color-bright-orange;
     transition: all 0.3s ease 0.3s;
+  }
+
+  @include tablet {
+    width: 91px;
+    margin: 30px 0 60px 0;
+  }
+
+  @include pc {
+    width: 160px;
   }
 }
 
@@ -113,17 +106,18 @@
   @include pc {
     height: 427px;
   }
-}
-.main-why p {
-  @include pc {
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0;
-  }
-}
 
-.main-why-title {
-  padding: 30px 0 0 0;
+  &p {
+    @include pc {
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 0;
+    }
+  }
+
+  &-title {
+    padding: 30px 0 0 0;
+  }
 }
 
 .grid-3 {
@@ -157,6 +151,12 @@
   height: 45px;
   margin-bottom: 60px;
 
+  &:hover {
+    text-shadow: 0px 0px 10px $color-white;
+    box-shadow: 0px 5px 10px $color-bright-orange;
+    transition: all 0.3s ease 0.2s;
+  }
+
   @include tablet {
     width: 210px;
   }
@@ -164,10 +164,4 @@
   @include pc {
     width: 255px;
   }
-}
-
-.button-more:hover {
-  text-shadow: 0px 0px 10px $color-white;
-  box-shadow: 0px 5px 10px $color-bright-orange;
-  transition: all 0.3s ease 0.2s;
 }
