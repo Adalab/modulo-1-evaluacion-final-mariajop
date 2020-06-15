@@ -4,12 +4,6 @@ html {
   list-style-type: none;
 }
 
-header,
-.main,
-footer {
-  border: 1px red solid;
-}
-
 .wrapper {
   width: 100%;
   padding-left: 15px;
@@ -24,9 +18,3 @@ footer {
     padding-right: 275px;
   }
 }
-
-// @include tablet {
-//   introducir cambios
-//   antes cargar mixins
-//   dsplay grid, meter diferente display, etc.
-// }

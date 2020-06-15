@@ -5,60 +5,70 @@ header {
   background-position: center;
 }
 
-.hamburger-button {
+.button-hamburger {
   width: 44px;
   height: 44px;
-  background-size: 45px;
+  padding: 14px 14px 14px 14px;
   background-color: $color-cerulean-blue;
   display: block;
   position: fixed;
+  margin: 0;
 }
 
 .hero {
   color: $color-white;
-  position: relative;
-  margin-top: 50vh;
+  height: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-evenly;
-}
+  justify-content: flex-end;
 
-.hero-title {
-  font-family: $font-bold;
-  text-transform: uppercase;
-  font-size: 2.625rem;
-  text-align: center;
-  line-height: 3.438;
-  margin-top: 0;
+  &-title {
+    font-family: $font-bold;
+    text-transform: uppercase;
+    font-size: 2.625rem;
+    text-align: center;
+    line-height: 3.438rem;
+    margin-top: 0;
+    max-width: 290px;
 
-  @include tablet {
-    font-size: 5rem;
-    line-height: 6.625rem;
-    max-width: 690px;
+    @include tablet {
+      font-size: 5rem;
+      line-height: 6.625rem;
+      max-width: 690px;
+    }
+
+    @include pc {
+      font-size: 6.25rem;
+      line-height: 8.25rem;
+      max-width: 730px;
+    }
   }
+  &-subtitle {
+    padding-top: 10px;
 
-  @include pc {
-    font-size: 6.25rem;
-    line-height: 8.25rem;
-    max-width: 730px;
-  }
-}
-
-.hero-subtitle {
-  padding-top: 10px;
-
-  @include tablet {
-    font-size: 1.5rem;
+    @include tablet {
+      font-size: 1.5rem;
+      padding-top: 20px;
+    }
+    @include pc {
+      font-size: 1.5rem;
+      padding-top: 0;
+    }
   }
 }
 
 .button-down {
   width: 45px;
   height: 45px;
+  padding: 15.3px 12px 15.3px 12px;
   background-size: 45px;
   background-color: $color-white;
   display: block;
   border-radius: 45px;
-  margin: 45px 137px 53px 138px;
+  margin: 30px 0 45px 0;
+
+  @include pc {
+    margin: 30px 0 13px 0;
+  }
 }

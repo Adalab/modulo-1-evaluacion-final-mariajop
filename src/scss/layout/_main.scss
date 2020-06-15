@@ -73,7 +73,7 @@
   color: $color-bright-orange;
   background-color: $color-white;
   border: 2px solid red;
-  // /*if red is removed, orange border color is lost. Why? I have no idea*/
+  // /*if red is removed, orange border color doesn't show. Why? I have no idea*/
   border-color: $color-bright-orange;
   padding: 6px;
   border-radius: 22.5px;
